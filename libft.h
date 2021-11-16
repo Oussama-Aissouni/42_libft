@@ -6,17 +6,17 @@
 /*   By: oaissoun <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/12 11:34:06 by oaissoun          #+#    #+#             */
-/*   Updated: 2021/11/12 12:29:37 by oaissoun         ###   ########.fr       */
+/*   Updated: 2021/11/14 20:20:49 by oaissoun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H 
-#define LIBFT_H
+#ifndef LIBFT_H
+# define LIBFT_H
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <unistd.h>
+# include <stdio.h>
+# include <stdlib.h>
+# include <string.h>
+# include <unistd.h>
 
 int		ft_atoi(const char *str);
 void	ft_bzero(void	*s, size_t n);

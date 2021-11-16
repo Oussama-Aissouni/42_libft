@@ -49,7 +49,7 @@ static char	*extract_word(char const *s, int from, int to)
 	return (ptr);
 }
 
-char	**zbel(char **ptr, char const *s, char c)
+char	**fill(char **ptr, char const *s, char c)
 {
 	int		i;
 	int		from;
@@ -87,5 +87,5 @@ char	**ft_split(char const *s, char c)
 	ptr = malloc(sizeof(char *) * (find_word_count(s, c) + 1));
 	if (ptr == NULL)
 		return (NULL);
-	return (zbel(ptr, s, c));
+	return (fill(ptr, s, c));
 }

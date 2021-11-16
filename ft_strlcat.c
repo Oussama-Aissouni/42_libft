@@ -6,9 +6,9 @@
 /*   By: oaissoun <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 10:51:35 by oaissoun          #+#    #+#             */
-/*   Updated: 2021/11/04 11:46:14 by oaissoun         ###   ########.fr       */
+/*   Updated: 2021/11/14 20:23:54 by oaissoun         ###   ########.fr       */
 /*                                                                            */
-/* ****************************************************************************/
+/* ************************************************************************** */
 
 #include"libft.h"
 
@@ -19,8 +19,10 @@ size_t	ft_strlcat(char	*dst, const char *src, size_t dstsize)
 	size_t	i;
 	size_t	j;
 
-	src_len = ft_strlen((char *)src);
-	dest_len = ft_strlen(dst);
+	src_len = ft_strlen(src);
+	if (!dst && dstsize == 0)
+		return (src_len);
+	dest_len = ft_strlen((const char *)dst);
 	i = dest_len;
 	j = 0;
 	if (dest_len >= dstsize)

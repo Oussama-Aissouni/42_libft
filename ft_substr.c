@@ -6,7 +6,7 @@
 /*   By: oaissoun <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 18:43:17 by oaissoun          #+#    #+#             */
-/*   Updated: 2021/11/07 20:46:29 by oaissoun         ###   ########.fr       */
+/*   Updated: 2021/11/14 20:17:37 by oaissoun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include"libft.h"
@@ -19,9 +19,9 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	if (!s)
 		return (NULL);
 	i = 0;
-	if (len > (size_t)ft_strlen((char *)s))
-		len = (size_t)ft_strlen((char *)s) - start;
-	if (start > (size_t)ft_strlen((char *)s))
+	if (len > ft_strlen(s))
+		len = ft_strlen(s) - start;
+	if (start > ft_strlen(s))
 	{
 		ptr = (char *)malloc(1);
 		ptr[0] = '\0';
