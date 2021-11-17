@@ -6,7 +6,7 @@
 /*   By: oaissoun <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/12 11:34:06 by oaissoun          #+#    #+#             */
-/*   Updated: 2021/11/14 20:20:49 by oaissoun         ###   ########.fr       */
+/*   Updated: 2021/11/17 16:45:30 by oaissoun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <stdio.h>
 # include <stdlib.h>
+# include <fcntl.h>
 # include <unistd.h>
 
 int		ft_atoi(const char *str);
