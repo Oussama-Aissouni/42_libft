@@ -1,8 +1,8 @@
-CC = gcc
+CC = cc
 
 NAME = libft.a
 
-FLAGS = -Wall -Werror -Wextra -c
+CFLAGS = -Wall -Werror -Wextra
 
 C_FILES = ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c\
 		ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprint.c\
@@ -25,12 +25,11 @@ O_FILES = ft_atoi.o ft_bzero.o ft_calloc.o ft_isalnum.o\
 all: $(NAME)
 
 $(NAME): $(O_FILES)
-	@$(CC) $(FLAGS) $(C_FILES)
-	@ar -rc $(NAME) $(O_FILES)
+	ar -rc $(NAME) $(O_FILES)
 
 re: fclean all
 
 fclean: clean
-	@rm -f $(NAME)
+	rm -f $(NAME)
 clean:
-	@rm -f $(O_FILES)
+	rm -f $(O_FILES)
